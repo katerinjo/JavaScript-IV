@@ -102,18 +102,18 @@ const me = new Student({
     name: 'Catherine Stewart',
     location: 'California',
     age: 25,
-    favLanguage: 'Esperanto',
-    specialty: 'language snobbery',
-    catchPhrase: "I understand it enough to do it, but I don't fully grok it."
+    previousBackground: 'student',
+    className: 'WEB21',
+    favSubjects: ['recursion', 'functional programming', 'back-end']
 })
 
 const aristotle = new Student({
     name: 'Aristotle',
     location: 'Ancient Greece',
     age: 2403,
-    favLanguage: 'Ancient Greek',
-    specialty: 'mistaken animal classifications',
-    catchPhrase: 'You gotta get some of that eudaimonia!'
+    previousBackground: 'philosopher',
+    className: 'WEB21',
+    favSubjects: ['ethics', 'ancient greek']
 })
 
 const scarecrow = new ProjectManager({
@@ -137,3 +137,18 @@ const ozma = new ProjectManager({
     gradClassName: 'WEB19',
     favInstructor: "Dan's cat"
 })
+
+personMan.speak()
+universeMan.speak()
+fred.speak()
+fred.demo('recursion')
+ugg.demo('inheritance')
+ugg.grade(aristotle, 'oversimplification')
+me.speak()
+me.listSubjects()
+aristotle.PRAssignment('CSS')
+aristotle.sprintChallenge('React')
+scarecrow.speak()
+scarecrow.standUp('WEB20_crow')
+ozma.demo('pointers')
+ozma.debugsCode(me, 'life')
