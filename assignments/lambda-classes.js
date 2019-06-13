@@ -38,15 +38,15 @@ class Student extends Person {
     }
 
     listSubjects() {
-        this.favSubjects.forEach(console.log)
+        this.favSubjects.forEach((subject) => console.log(subject))
     }
 
     PRAssignment(subject) {
-        console.log(`${student.name} has submitted a PR for ${subject}`)
+        console.log(`${this.name} has submitted a PR for ${subject}`)
     }
 
     sprintChallenge(subject) {
-        console.log(`${student.name} has begun sprint challenge on ${subject}`)
+        console.log(`${this.name} has begun sprint challenge on ${subject}`)
     }
 }
 
@@ -62,7 +62,7 @@ class ProjectManager extends Instructor {
     }
 
     debugsCode(student, subject) {
-        console.log(`${self.name} debugs ${student.name}'s code on ${subject}`)
+        console.log(`${this.name} debugs ${student.name}'s code on ${subject}`)
     }
 }
 
@@ -149,6 +149,6 @@ me.listSubjects()
 aristotle.PRAssignment('CSS')
 aristotle.sprintChallenge('React')
 scarecrow.speak()
-scarecrow.standUp('WEB20_crow')
+scarecrow.standUp("WEB20_crow")
 ozma.demo('pointers')
 ozma.debugsCode(me, 'life')
